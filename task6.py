@@ -1,6 +1,10 @@
-def reverse_strings(n):
-    if n == 0:
-        return
+def reverse(n):
     s = input()
-    reverse_strings(n - 1)
+    if n > 1:
+        reverse(n - 1)
     print(s)
+ 
+ 
+n = int(input())
+reverse(n)
+ 

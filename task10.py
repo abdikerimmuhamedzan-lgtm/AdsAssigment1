@@ -8,11 +8,11 @@ def isPowerOfTwo(n):
     return isPowerOfTwo(n // 2)
 
 for i in range(10):
-    status = "is a power of two" if isPowerOfTwo(i) else "is not a power of two"
-    print(f"{i} {status}")
+    rslt = "is a power of two" if isPowerOfTwo(i) else "is not a power of two"
+    print(f"{i} {rslt}")
 
 print("-" * 22)
 
 for i in range(10, 33, 2):
-    status = "is a power of two" if isPowerOfTwo(i) else "is not a power of two"
-    print(f"{i} {status}")
+    rslt = "is a power of two" if isPowerOfTwo(i) else "is not a power of two"
+    print(f"{i} {rslt}")
