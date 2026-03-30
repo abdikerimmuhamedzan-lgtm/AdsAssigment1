@@ -1,15 +1,8 @@
-def reverse_str(s):
-    s = s.strip()
-    if not s:
+def reverse(n):
+    if n == 0:
         return
-    if ' ' in s:
-        idx = s.rindex(' ')
-        print(s[idx + 1:], end=' ')
-        reverse_str(s[:idx])
-    else:
-        print(s, end=' ')
- 
- 
+    x = int(input())
+    reverse(n - 1)  
+    print(x, end=' ')  
 n = int(input())
-reverse_str(input())
-print()
+reverse(n)

@@ -1,11 +1,10 @@
-def permutations(s, current):
-    if not s:
+def permutations(s, current=""):
+    if len(current) == len(s):
         print(current)
         return
-    for i in range(len(s)):
-        permutations(s[:i] + s[i + 1:], current + s[i])
+    for char in s:
+        if char not in current:
+            permutations(s, current + char)
 
- 
 s = input()
-permutations(s, '')
- 
+permutations(s)
